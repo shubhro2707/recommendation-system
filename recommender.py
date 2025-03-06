@@ -4,7 +4,7 @@ from surprise.model_selection import cross_validate
 import joblib
 
 # Load cleaned dataset
-df_cleaned = pd.read_csv("C:\\Users\\mlray\\Downloads\\amazon reviews\\cleaned_reviews.csv")  # Ensure this file is in the same directory
+df_cleaned = pd.read_csv("cleaned_reviews.csv")  # Ensure this file is in the same directory
 
 # Define rating scale for Surprise library
 reader = Reader(rating_scale=(1, 5))

@@ -7,8 +7,8 @@ from surprise import Dataset, Reader
 app = FastAPI()
 
 # Load dataset and trained model
-df_cleaned = pd.read_csv("C:\\Users\\mlray\\Downloads\\amazon reviews\\cleaned_reviews.csv")
-model = joblib.load("C:\\Users\\mlray\\Downloads\\amazon reviews\\recommendation_model.pkl")
+df_cleaned = pd.read_csv("cleaned_reviews.csv")
+model = joblib.load("recommendation_model.pkl")
 
 # Define recommendation function
 def get_recommendations(user_id, n=5):
